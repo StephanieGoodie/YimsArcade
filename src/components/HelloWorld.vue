@@ -2,6 +2,7 @@
   <div>
     <h1>X & O Game</h1>
     <div id="game-board">
+      <div class = "newgame"> flappy bird> </div>
       <div class="cell" v-for="(cell, index) in gameBoard" :key="index" @click="makeMove(index)">
         {{ cell }}
       </div>
@@ -97,6 +98,19 @@ body {
   font-family: Arial, sans-serif;
   text-align: center;
 }
+.newgame {
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px 4px;
+  border: 2px solid #444;
+  color: #444;
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
 
 h1 {
   color: #333;
