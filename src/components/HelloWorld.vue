@@ -76,7 +76,9 @@ export default {
           this.gameBoard[a] &&
           this.gameBoard[a] === this.gameBoard[b] &&
           this.gameBoard[a] === this.gameBoard[c]
-        ) {
+        ) {this.gameboard[a].style.backgroundColor = 'lightgreen';
+        this.gameboar[b].style.backgroundColor = 'lightgreen';
+        this.gameboard[c].style.backgroundColor = 'lightgreen';
           return true;
         }
       }
