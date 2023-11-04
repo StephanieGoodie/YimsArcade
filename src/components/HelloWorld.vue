@@ -40,19 +40,51 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
+<style CSS>
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+
+h1 {
+    color: #333;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 330px;
 }
-a {
-  color: #42b983;
+
+.cell {
+    width: 100px;
+    height: 100px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cell:hover {
+    background-color: #ccc;
+}
+
+#message {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+#score {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+#score p {
+    margin: 5px;
 }
 </style>
